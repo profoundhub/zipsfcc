@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="zipsApp">
+  <body ng-app="ziplineFcc2App">
+    <h1>Hello, Welcome to FCC Zips</h1>
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -32,7 +33,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-
+              
             <a class="navbar-brand" href="#/">zips</a>
           </div>
 
@@ -54,7 +55,7 @@
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-heart"></span> from Profound Ideation Inc.</p>
       </div>
     </div>
 
@@ -85,9 +86,16 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+          <script src="scripts/app.js"></script>
+          <script src="scripts/controllers/main.js"></script>
+          <script src="scripts/controllers/about.js"></script>
+          <script src="pen/pen.controller.js"></script>
+          <script src="pen/pen.js"></script>
+          <script src="pen/penTags/penTags.filter.js"></script>
+          <script src="updatedb/updatedb.controller.js"></script>
+          <script src="updatedb/updatedb.js"></script>
+          <script src="components/modal/modal.service.js"></script>
+          <script src="components/navbar/navbar.controller.js"></script>
         <!-- endbuild -->
 </body>
 </html>
