@@ -4,7 +4,7 @@ angular.module('ziplineFcc2App')
   .controller('MainCtrl', function ($scope, $http) {
     $scope.awesomeThings = [];
 
-    $http.get('/api/things').success(function(awesomePens) {
+    $http.get('api/things').success(function(awesomePens) {
       $scope.awesomePens = awesomePens;
     });
 
@@ -12,11 +12,11 @@ angular.module('ziplineFcc2App')
       if($scope.newThing === '') {
         return;
       }
-      $http.post('/api/things', { name: $scope.newThing });
+      $http.post('api/things', { name: $scope.newThing });
       $scope.newThing = '';
     };
 
     $scope.deleteThing = function(thing) {
-      $http.delete('/api/things/' + thing._id);
+      $http.delete('api/things/' + thing._id);
     };
   });

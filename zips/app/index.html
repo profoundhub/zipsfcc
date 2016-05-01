@@ -53,24 +53,39 @@
               <span class="icon-bar"></span>
             </button>
               
-            <a class="navbar-brand" href="/">Zips</a>
+            <a class="navbar-brand" href="#/">Zips</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a ng-href="/about">About</a></li>
-              <li><a ng-href="/">Contact</a></li>
-            </ul>
+              <li class="active"><a href="#/">Home</a></li>
+              <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/">Contact</a></li>
+            </ul> 
           </div>
         </div>
       </div>
     </div>
 
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+      <script>
+        angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+      </script>
+  
     <div class="container">
     
-    <div ng-view=""></div>
+      <div ng-view=""></div>
+  
+  
+        <hr />
+
+        <pre>$location.path() = {{$location.path()}}</pre>
+        <pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>
+        <pre>$route.current.params = {{$route.current.params}}</pre>
+        <pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
+        <pre>$routeParams = {{$routeParams}}</pre>
         
     </div>
 
