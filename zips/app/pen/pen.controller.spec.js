@@ -3,7 +3,7 @@
 describe('Controller: PenCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('ziplineFcc2App'));
+  beforeEach(module('fccziplines'));
 
   var PenCtrl, scope;
 

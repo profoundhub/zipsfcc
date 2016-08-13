@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('ziplineFcc2App', [
+  .module('fccziplines', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
