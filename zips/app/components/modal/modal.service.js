@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fccziplines')
+angular.module('fccziplines',[])
   .factory('Modal', function ($rootScope, $modal) {
     /**
      * Opens a modal
