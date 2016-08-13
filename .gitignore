@@ -50,3 +50,6 @@ Temporary Items
 .env
 .private
 .daniel
+bower_components
+node_modules/angular-utils-pagination/
+node_modules
