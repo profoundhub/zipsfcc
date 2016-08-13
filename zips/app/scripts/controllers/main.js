@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the zipsApp
  */
-angular.module('ziplineFcc2App')
+angular.module('fccziplines')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

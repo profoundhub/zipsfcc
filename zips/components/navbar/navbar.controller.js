@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ziplineFcc2App')
+angular.module('fccziplines')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',

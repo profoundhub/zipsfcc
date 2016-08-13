@@ -3,7 +3,7 @@
 describe('Filter: penTags', function () {
 
   // load the filter's module
-  beforeEach(module('ziplineFcc2App'));
+  beforeEach(module('fccziplines'));
 
   // initialize a new instance of the filter before each test
   var penTags;

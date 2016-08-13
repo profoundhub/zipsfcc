@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ziplineFcc2App')
+angular.module('fccziplines')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/updatedb', {
