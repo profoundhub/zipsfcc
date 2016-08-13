@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fccziplines')
+angular.module('ziplineFcc2App')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

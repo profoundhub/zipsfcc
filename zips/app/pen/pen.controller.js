@@ -1,7 +1,7 @@
 'use strict';
 //http://stackoverflow.com/questions/18967127/angularjs-when-to-pass-scope-variable-to-function
 //http://www.java2s.com/Tutorials/AngularJS/AngularJS_Example/Controller/Call_function_in_controller_with_onchange_event.htm
-angular.module('fccziplines')
+angular.module('ziplineFcc2App')
   .controller('PenCtrl', function ($scope, $http) {
     $scope.message = 'Hello';
     $scope.awesomePens = [];
