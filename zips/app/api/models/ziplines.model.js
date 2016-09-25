@@ -38,10 +38,10 @@ module.exports.Tags = mongoose.model('Tags', TagsSchema);
 
 var ZiplinesSchema = new Schema({
   owner:String,
-  uri: {type:String, required: true, unique:true},
+  uri: { type:String, required: true, unique:true },
   title: String,
-  created: {type: Date},
-  modified:{type: Date},
+  created: { type: Date },
+  modified:{ type: Date },
   //tags: {type:[], get: getTags, set: setTags},
   //tags: [{type:mongoose.Schema.Types.ObjectId, ref: 'Tags'}],
   tags:[],
@@ -60,7 +60,7 @@ ZiplinesSchema.statics.findByUri = function findByUri(value, cb){
 module.exports.Ziplines = mongoose.model('Ziplines', ZiplinesSchema);
 
 var ziplineSchema = new Schema({
- _owner: {type:mongoose.Schema.Types.ObjectId, ref:'Ziplines'},
+ _owner: { type:mongoose.Schema.Types.ObjectId, ref:'Ziplines' },
  title: String,
  url: String,
  created: {type: Date},
