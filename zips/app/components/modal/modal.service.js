@@ -1,6 +1,10 @@
 'use strict';
 
+<<<<<<< 090537951a1485fac3baaea5e5fa5a09cf84887c
 angular.module('ziplineFcc2App',[])
+=======
+angular.module('fccziplines', [])
+>>>>>>> fix bugs
   .factory('Modal', function ($rootScope, $modal) {
     /**
      * Opens a modal

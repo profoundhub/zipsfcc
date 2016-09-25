@@ -14,8 +14,9 @@ var Tags = require('../models/ziplines.model').Tags;
 //http://blog.miguelgrinberg.com/post/easy-web-scraping-with-nodejs
 //http://stackoverflow.com/questions/28261780/nodejs-async-callback-not-succeeding
 //implement a scraper node async
+
 exports.index = function(req, res) {
-  console.log('inside index...');
+  console.log('inside index ...');
   //var pagenum = 1;
   var allpendata = [];
   var ii = [];
@@ -23,6 +24,7 @@ exports.index = function(req, res) {
   for (var i = 0; i < limit; i++) {
     ii.push(i + 1);
   };
+
   ii.forEach(function(pagenum) {
     setTimeout(function() {
       var options = {
@@ -32,6 +34,7 @@ exports.index = function(req, res) {
         uri: "http://codepen.io/search/pens/?limit=all&page=" + String(pagenum) + "&q=freecodecamp",
         method: 'GET'
       };
+
       request(options, (function(pagenum) {
         console.log(pagenum);
         return function(error, response, html) {
@@ -242,7 +245,6 @@ exports.destroy = function(req, res) {
     });
   });
 };
-
 
 //'use strict';
 //
