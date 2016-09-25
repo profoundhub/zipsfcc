@@ -7,13 +7,13 @@ var ENV_UA = require('../../config/local.env').ENV_UA;
 var Ziplines = require('../models/ziplines.model').Ziplines;
 var Tags = require('../models/ziplines.model').Tags;
 
-//http://stackoverflow.com/questions/17121846/node-js-how-to-send-headers-with-form-data-using-request-module
-//http://stackoverflow.com/questions/20967006/how-to-create-a-sleep-delay-in-nodejs-that-is-blocking
-//http://www.smashingmagazine.com/2015/04/web-scraping-with-nodejs/
-//https://scotch.io/tutorials/scraping-the-web-with-node-js
-//http://blog.miguelgrinberg.com/post/easy-web-scraping-with-nodejs
-//http://stackoverflow.com/questions/28261780/nodejs-async-callback-not-succeeding
-//implement a scraper node async
+// http://stackoverflow.com/questions/17121846/node-js-how-to-send-headers-with-form-data-using-request-module
+// http://stackoverflow.com/questions/20967006/how-to-create-a-sleep-delay-in-nodejs-that-is-blocking
+// http://www.smashingmagazine.com/2015/04/web-scraping-with-nodejs/
+// https://scotch.io/tutorials/scraping-the-web-with-node-js
+// http://blog.miguelgrinberg.com/post/easy-web-scraping-with-nodejs
+// http://stackoverflow.com/questions/28261780/nodejs-async-callback-not-succeeding
+// Implement a scraper node async
 
 exports.index = function(req, res) {
   console.log('inside index ...');
@@ -254,7 +254,7 @@ exports.destroy = function(req, res) {
 //var ENV_UA = require('../../config/local.env').ENV_UA;
 //var Ziplines = require('../models/ziplines.model');
 //
-////http://stackoverflow.com/questions/17121846/node-js-how-to-send-headers-with-form-data-using-request-module
+//// http://stackoverflow.com/questions/17121846/node-js-how-to-send-headers-with-form-data-using-request-module
 //
 //
 //exports.index = function(req, res){
