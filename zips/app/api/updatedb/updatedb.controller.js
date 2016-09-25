@@ -246,7 +246,6 @@ exports.destroy = function(req, res) {
   });
 };
 
-
 //'use strict';
 //
 //var _ = require('lodash');
